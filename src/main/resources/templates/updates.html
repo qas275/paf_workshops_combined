@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>FILL FORM FOR EITHER POST </H1>
+
+    <form action="/api/update" method = "post">
+        <table>
+            <tr>
+                <td>company:</td>
+                <td><input type="text" name = "company"></td>
+            </tr>
+            <tr>
+                <td>first name:</td>
+                <td><input type="text" name = "first_name"></td>
+            </tr>
+            <tr>
+                <td>last_name:</td>
+                <td><input type="text" name = "last_name"></td>
+            </tr>
+            <tr>
+                <td>city:</td>
+                <td><input type="text" name = "city"></td>
+            </tr>
+            <tr>
+                <td>state:</td>
+                <td><input type="text" name = "state_province"></td>
+            </tr>
+            <tr>
+                <td>postal code:</td>
+                <td><input type="text" name = "zip_postal_code"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">POST</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <H1>FILL FORM FOR CHANGING COMPANY AND NAME OF CUSTOMER BASED ON ID</H1>
+    <form action="/api/update" method = "post">
+        <table>
+            <tr>
+                <td>ID OF CUSTOMER DETAILS TO CHANGE:</td>
+                <td><input type="text" name = "customer_id"></td>
+            </tr>
+            <tr>
+                <td>company:</td>
+                <td><input type="text" name = "company"></td>
+            </tr>
+            <tr>
+                <td>first name:</td>
+                <td><input type="text" name = "first_name"></td>
+            </tr>
+            <tr>
+                <td>last_name:</td>
+                <td><input type="text" name = "last_name"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">PUT</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
