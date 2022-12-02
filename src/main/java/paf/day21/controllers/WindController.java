@@ -17,6 +17,11 @@ public class WindController {
     @Autowired
     CustSvc svc;
 
+    @GetMapping(path ="/")
+    public String showIndex(){
+        return "home";
+    }
+
     @GetMapping(path = "/total")
     public String showTotalSearchHome (){
         return "total";
